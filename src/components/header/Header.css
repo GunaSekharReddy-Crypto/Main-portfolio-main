@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+header {
+  height: 35vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header_container {
+  text-align: center;
+}
+
+.Header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  right: 0;
+  bottom: 0rem;
+  padding: 35px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.Header__socials a {
+  color: white;
+}
+
+.Header__socials a:hover {
+  color: skyblue;
+}
+
+.Header__socials::after {
+  content: '                   ';
+  width: 1px;
+  height: 5rem;
+  background: white;
+}
+
+
+
+/*---------------------------------------media query for medium devices*/
+@media screen and (max-width:1024px) {
+  header {
+    height: 68vh;
+
+  }
+
+
+}
+
+/*---------------------------------------media query for small devices*/
+@media screen and (max-width:600px) {
+
+  header {
+    height: 100vh;
+  }
+
+  .Header__socials {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15%;
+    position: fixed;
+    padding: 2px;
+  }
+
+}

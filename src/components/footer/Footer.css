@@ -1,0 +1,51 @@
+
+footer {
+    background-image: url('../../assets/BG3.avif');
+    width: 100%;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+}
+
+footer a {
+    text-decoration: none;
+    align-items: center;
+    padding: 5px;
+    color: #1a1a19;
+}
+
+
+/*---------------------------------------media query for medium devices*/
+@media screen and (max-width:1024px) {}
+
+/*---------------------------------------media query for small devices*/
+@media screen and (max-width: 600px) {
+
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-left: 15%;
+    }
+
+    footer {
+        margin-left: 23%;
+        width: 40%;
+    }
+
+    footer h2 {
+        margin-left: 5%;
+    }
+    footer a {
+        text-decoration: none;
+        align-items: center;
+        padding: 5px;
+        color: #1a1a19;
+        
+    }
+    .footer__copyright{
+        margin-left: 20%;
+    }
+    
+
+}

@@ -1,0 +1,80 @@
+.form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h1 {
+  color: #13f3f3;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logIn-form {
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.logIn-form p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b8bfc6;
+  padding: 10px 10px;
+}
+
+.logIn-form input {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.logIn-form textarea {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.logIn-form button {
+  left: 30%;
+  background-color: #13f3f3;
+  color: #1d1b1b;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 7px;
+  padding: 15px 15px;
+  border: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .form {
+    margin-left: 40%;
+    width: 20%;
+  }
+}

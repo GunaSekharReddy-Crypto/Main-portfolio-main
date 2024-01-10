@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #343F4F;
+}
+
+#about {
+  margin-top: -45px;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.resume-btn {
+  padding: 15px;
+  border: 2px solid white;
+  text-decoration: none;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #00FFFF;
+  border-radius: 6px;
+  font-weight: 300;
+}
+
+.resume-btn:hover {
+  color: rgb(186, 60, 60);
+}
+
+img {
+  border-radius: 50px;
+  width: 200px;
+  height: 300px;
+
+}
+
+.about__content p {
+  /* margin: 2rem 0 2,6rem; */
+  color: #FFFBF9;
+  text-align: justify;
+  font-family: 'Courier New', monospace;
+}
+
+.ParticleBackground {
+  position: fixed !important;
+  display: block;
+}
+
+
+/*---------------------------------------media query for medium devices*/
+@media screen and (max-width:1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+}
+
+/*---------------------------------------media query for small devices*/
+@media screen and (max-width:600px) {
+  #about {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  .about__me {
+    width: 45%;
+    margin: 0 auto 3rem;
+    margin-top: -60%;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+  }
+
+  .about__content {
+    text-align: center;
+
+  }
+
+  .about__content p {
+    font-size: 12px;
+    margin-left: 8.5%;
+    width: 20%;
+  }
+
+  section h5, h2{
+    margin-top: -1%;
+    margin-left: 40%;
+  }
+
+
+  img {
+    width: 150px;
+    height: 500px;
+    margin-top: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .resume-btn {
+    margin-left: -60%;
+  }
+  
+
+}
